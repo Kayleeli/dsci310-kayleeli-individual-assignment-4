@@ -3,15 +3,14 @@ title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 format: 
   html:
-    number-sections: true
-    toc: true
+    number-sections: false
     embed-resources: true
 editor: source
+toc: true
 bibliography: references.bib
 execute:
   echo: false
   warning: false
-  message: false
 ---
 
 ```{r}
@@ -71,10 +70,9 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 Additionally, note that in @tbl-horses-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-horse_pops_plot.
 
 ::: {style="text-align:center;"}
-![Horse populations for the province with the largest standard deviation](../results/horse_pop_plot_largest_sd.png){#fig-horse_pop_plot_largest_sd width=60%}
+![Horse populations for the province with the largest standard deviation](../results/horse_pop_plot_largest_sd.png){#fig-horse_pop_largest_sd width=65%}
 :::
 
+In @fig-horse_pop_largest_sd we zoom in and look at the province of `{r} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
-In @fig-horse_pop_plot_largest_sd we zoom in and look at the province of `{r} largest_sd`, which had the largest spread of values in terms of standard deviation.
-
-## References
+# References
